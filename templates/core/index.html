@@ -8,11 +8,17 @@
         </div>
 
         <div class="col-sm">
-            Sem Bem Vindo de Volta {{ usuario.username }}
+            Sem Bem Vindo de Volta {{ usuario.funcionarios.nome }}
+            Email:{{ usuario }}
         </div>
 
         <div class="col-sm">
             <a href="{% url 'logout' %}">Deslogar</a>
+            {% if usuario.funcionarios.empresa %}
+                <a href="{% url 'edit-empresa' usuario.funcionarios.empresa.id %}">Editar Empresa</a>
+            {% else %}
+                <a href="{% url 'nova-empresa' %}">Criar Empresa</a>
+            {% endif %}
         </div>
 
     </div>
