@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    Seja Bem vindo
+    <div class="row">
+        <div class="col-sm">
+            Uma coluna
+        </div>
+
+        <div class="col-sm">
+            Sem Bem Vindo de Volta {{ usuario.username }}
+        </div>
+
+        <div class="col-sm">
+            <a href="{% url 'logout' %}">Deslogar</a>
+        </div>
+
+    </div>
+{% endblock %}
