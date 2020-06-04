@@ -1,16 +1,8 @@
 import os
-from django.utils.translation import ugettext_lazy as _
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-<<<<<<< HEAD
-
-SECRET_KEY = 'wmy(n$=uo7%d%b23_ah)q+ywi-f6d!y%2d4pvp5ctf6c8su)c$'
-
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
-=======
 
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +16,6 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
->>>>>>> parent of 0b2f804... add user login, and another models
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -33,28 +24,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'rest_framework.authtoken',
     'apps.empresas',
     'apps.funcionarios',
-    'apps.departamentos',
-<<<<<<< HEAD
     'apps.documentos',
-    'apps.registro_hora_extra',
-    'apps.core',
-    'bootstrapform',
-    'django_celery_results',
-    'django_celery_beat',
-    'apps.app_antiga'
-=======
+    'apps.departamentos',
     'apps.hora_extra',
->>>>>>> parent of 0b2f804... add user login, and another models
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -67,11 +46,7 @@ ROOT_URLCONF = 'gestao_rh.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
-        'DIRS': ['templates'],
-=======
         'DIRS': [],
->>>>>>> parent of 0b2f804... add user login, and another models
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,7 +54,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.i18n',
             ],
         },
     },
@@ -87,8 +61,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'gestao_rh.wsgi.application'
 
-<<<<<<< HEAD
-=======
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
@@ -104,7 +76,6 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
->>>>>>> parent of 0b2f804... add user login, and another models
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -120,17 +91,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-<<<<<<< HEAD
-LANGUAGE_CODE = 'en'
-=======
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
->>>>>>> parent of 0b2f804... add user login, and another models
 
-TIME_ZONE = 'America/Sao_Paulo'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -138,48 +105,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-<<<<<<< HEAD
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "staticfiles"),
-]
-
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
-
-MEDIA_URL = '/media/'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-
-LOGIN_REDIRECT_URL = 'home'
-
-LOGOUT_REDIRECT_URL = 'login'
-
-CELERY_RESULT_BACKEND = 'django-db'
-
-
-CELERY_ACCEPT_CONTENT = ['application/json']
-CELERY_RESULT_SERIALIZER = 'json'
-CELERY_TASK_SERIALIZER = 'json'
-
-
-DATABASE_ROUTERS = ['gestao_rh.DBRoutes.DBRoutes']
-
-LANGUAGES = (
-    ('en', _('English')),
-    ('pt', _('Portugues')),
-    ('es', _('Spanish')),
-)
-
-LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'locale'),
-)
-
-from .local_settings import *
-=======
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
->>>>>>> parent of 0b2f804... add user login, and another models
