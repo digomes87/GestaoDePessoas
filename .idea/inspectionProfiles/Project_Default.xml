@@ -1,0 +1,113 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JSHint" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="2.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.4" />
+            <item index="2" class="java.lang.String" itemvalue="3.9" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <value>
+          <list size="80">
+            <item index="0" class="java.lang.String" itemvalue="html5lib" />
+            <item index="1" class="java.lang.String" itemvalue="Babel" />
+            <item index="2" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="3" class="java.lang.String" itemvalue="jsonpickle" />
+            <item index="4" class="java.lang.String" itemvalue="django-nested-admin" />
+            <item index="5" class="java.lang.String" itemvalue="kombu" />
+            <item index="6" class="java.lang.String" itemvalue="django-bootstrap4" />
+            <item index="7" class="java.lang.String" itemvalue="django-choices" />
+            <item index="8" class="java.lang.String" itemvalue="certifi" />
+            <item index="9" class="java.lang.String" itemvalue="stripe" />
+            <item index="10" class="java.lang.String" itemvalue="docutils" />
+            <item index="11" class="java.lang.String" itemvalue="django-hijack" />
+            <item index="12" class="java.lang.String" itemvalue="vine" />
+            <item index="13" class="java.lang.String" itemvalue="django-polymorphic" />
+            <item index="14" class="java.lang.String" itemvalue="django-sekizai" />
+            <item index="15" class="java.lang.String" itemvalue="swapper" />
+            <item index="16" class="java.lang.String" itemvalue="djongo" />
+            <item index="17" class="java.lang.String" itemvalue="rjsmin" />
+            <item index="18" class="java.lang.String" itemvalue="django-appconf" />
+            <item index="19" class="java.lang.String" itemvalue="django-debug-toolbar-template-timings" />
+            <item index="20" class="java.lang.String" itemvalue="django-authtools" />
+            <item index="21" class="java.lang.String" itemvalue="easy-thumbnails" />
+            <item index="22" class="java.lang.String" itemvalue="django-reversion" />
+            <item index="23" class="java.lang.String" itemvalue="djangocms-attributes-field" />
+            <item index="24" class="java.lang.String" itemvalue="boto3" />
+            <item index="25" class="java.lang.String" itemvalue="django-mptt" />
+            <item index="26" class="java.lang.String" itemvalue="django-filter" />
+            <item index="27" class="java.lang.String" itemvalue="djangocms-picture" />
+            <item index="28" class="java.lang.String" itemvalue="django-hijack-admin" />
+            <item index="29" class="java.lang.String" itemvalue="idna" />
+            <item index="30" class="java.lang.String" itemvalue="django-herald" />
+            <item index="31" class="java.lang.String" itemvalue="django-constance" />
+            <item index="32" class="java.lang.String" itemvalue="django-storages" />
+            <item index="33" class="java.lang.String" itemvalue="requests" />
+            <item index="34" class="java.lang.String" itemvalue="django-tables2" />
+            <item index="35" class="java.lang.String" itemvalue="importlib-metadata" />
+            <item index="36" class="java.lang.String" itemvalue="djangocms-text-ckeditor" />
+            <item index="37" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="38" class="java.lang.String" itemvalue="celery" />
+            <item index="39" class="java.lang.String" itemvalue="django-filer" />
+            <item index="40" class="java.lang.String" itemvalue="django-sql-explorer" />
+            <item index="41" class="java.lang.String" itemvalue="zipp" />
+            <item index="42" class="java.lang.String" itemvalue="phonenumberslite" />
+            <item index="43" class="java.lang.String" itemvalue="django-phonenumber-field" />
+            <item index="44" class="java.lang.String" itemvalue="urllib3" />
+            <item index="45" class="java.lang.String" itemvalue="djangorestframework" />
+            <item index="46" class="java.lang.String" itemvalue="billiard" />
+            <item index="47" class="java.lang.String" itemvalue="bson" />
+            <item index="48" class="java.lang.String" itemvalue="django-picklefield" />
+            <item index="49" class="java.lang.String" itemvalue="django-webpack-loader" />
+            <item index="50" class="java.lang.String" itemvalue="rcssmin" />
+            <item index="51" class="java.lang.String" itemvalue="django-compat" />
+            <item index="52" class="java.lang.String" itemvalue="dataclasses" />
+            <item index="53" class="java.lang.String" itemvalue="pymongo" />
+            <item index="54" class="java.lang.String" itemvalue="botocore" />
+            <item index="55" class="java.lang.String" itemvalue="django-jquery-js" />
+            <item index="56" class="java.lang.String" itemvalue="djangocms-admin-style" />
+            <item index="57" class="java.lang.String" itemvalue="raven" />
+            <item index="58" class="java.lang.String" itemvalue="amqp" />
+            <item index="59" class="java.lang.String" itemvalue="django-formset-js" />
+            <item index="60" class="java.lang.String" itemvalue="django-compressor" />
+            <item index="61" class="java.lang.String" itemvalue="django-debug-toolbar" />
+            <item index="62" class="java.lang.String" itemvalue="djangocms-link" />
+            <item index="63" class="java.lang.String" itemvalue="chardet" />
+            <item index="64" class="java.lang.String" itemvalue="jmespath" />
+            <item index="65" class="java.lang.String" itemvalue="s3transfer" />
+            <item index="66" class="java.lang.String" itemvalue="python-monkey-business" />
+            <item index="67" class="java.lang.String" itemvalue="Unidecode" />
+            <item index="68" class="java.lang.String" itemvalue="Django" />
+            <item index="69" class="java.lang.String" itemvalue="unicodecsv" />
+            <item index="70" class="java.lang.String" itemvalue="Pillow" />
+            <item index="71" class="java.lang.String" itemvalue="django-treebeard" />
+            <item index="72" class="java.lang.String" itemvalue="six" />
+            <item index="73" class="java.lang.String" itemvalue="django-localflavor" />
+            <item index="74" class="java.lang.String" itemvalue="django-ordered-model" />
+            <item index="75" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="76" class="java.lang.String" itemvalue="django-classy-tags" />
+            <item index="77" class="java.lang.String" itemvalue="django-cms" />
+            <item index="78" class="java.lang.String" itemvalue="django-formtools" />
+            <item index="79" class="java.lang.String" itemvalue="django-parsley" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="django.core.urlresolvers" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
