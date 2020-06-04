@@ -1,13 +1,30 @@
 import os
 from django.utils.translation import ugettext_lazy as _
 
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+<<<<<<< HEAD
 
 SECRET_KEY = 'wmy(n$=uo7%d%b23_ah)q+ywi-f6d!y%2d4pvp5ctf6c8su)c$'
 
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+=======
+
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = config('SECRET_KEY')
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = config('DEBUG', default=False, cast=bool)
+ALLOWED_HOSTS = []
+
+
+# Application definition
+>>>>>>> parent of 0b2f804... add user login, and another models
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -21,6 +38,7 @@ INSTALLED_APPS = [
     'apps.empresas',
     'apps.funcionarios',
     'apps.departamentos',
+<<<<<<< HEAD
     'apps.documentos',
     'apps.registro_hora_extra',
     'apps.core',
@@ -28,6 +46,9 @@ INSTALLED_APPS = [
     'django_celery_results',
     'django_celery_beat',
     'apps.app_antiga'
+=======
+    'apps.hora_extra',
+>>>>>>> parent of 0b2f804... add user login, and another models
 ]
 
 MIDDLEWARE = [
@@ -46,7 +67,11 @@ ROOT_URLCONF = 'gestao_rh.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': ['templates'],
+=======
+        'DIRS': [],
+>>>>>>> parent of 0b2f804... add user login, and another models
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -62,6 +87,24 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'gestao_rh.wsgi.application'
 
+<<<<<<< HEAD
+=======
+
+# Database
+# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+
+# Password validation
+# https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
+
+>>>>>>> parent of 0b2f804... add user login, and another models
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -77,7 +120,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+<<<<<<< HEAD
 LANGUAGE_CODE = 'en'
+=======
+
+# Internationalization
+# https://docs.djangoproject.com/en/2.0/topics/i18n/
+
+LANGUAGE_CODE = 'en-us'
+>>>>>>> parent of 0b2f804... add user login, and another models
 
 TIME_ZONE = 'America/Sao_Paulo'
 
@@ -87,6 +138,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+<<<<<<< HEAD
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -124,3 +176,10 @@ LOCALE_PATHS = (
 )
 
 from .local_settings import *
+=======
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.0/howto/static-files/
+
+STATIC_URL = '/static/'
+>>>>>>> parent of 0b2f804... add user login, and another models

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import io
 
 from django.contrib.auth.models import User
@@ -117,3 +118,8 @@ class Pdf(View):
 
 class PdfDebug(TemplateView):
     template_name = 'funcionarios/relatorio.html'
+=======
+from django.shortcuts import render
+
+# Create your views here.
+>>>>>>> parent of 0b2f804... add user login, and another models
